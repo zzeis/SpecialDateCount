@@ -6,7 +6,7 @@ html {
 
 .container {
     margin: 2% auto;
-    width: 70%;
+    width: 100%;
     text-align: center;
     justify-content: center;
     height: 250px;
@@ -23,12 +23,12 @@ div.container {
 
 .anim {
     position: relative;
-
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     vertical-align: center;
-
+    gap: 75px;
 }
 
 .anim .timer {
@@ -58,7 +58,7 @@ div.container {
     background-color: #9400ff;
     border-radius: 5px;
     margin: auto;
-    width: 300px;
+    width: 280px;
     height: 150px;
     opacity: 0.7;
     padding: 10px;
@@ -102,11 +102,17 @@ div.timer p {
 
 }
 
-body {
-    background-size: cover;
-    background-repeat: initial;
-    height: 100%;
-    background-image: url('/img/background.svg');
+body,html {
+    
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/img/background.svg');
 
 }
 
@@ -130,11 +136,22 @@ footer {
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) and (orientation:portrait) {
+@media only screen and (max-width: 768px) and (orientation:portrait) {
     body {
         background-image: url('/img/background-sm.svg');
         background-size: cover;
         height: 100%;
-        background-repeat: no-repeat;
+        
+    }
+
+    .anim {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        vertical-align: center;
+        gap: 5%;
     }
 }
