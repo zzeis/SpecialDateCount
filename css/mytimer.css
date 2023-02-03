@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
+
+
 html {
     scroll-behavior: smooth;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+ 
+  background-size: cover;
+  background-image: url('/img/background.svg');
+
 }
 
 .container {
@@ -102,19 +114,7 @@ div.timer p {
 
 }
 
-body,html {
-    
 
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('/img/background.svg');
-
-}
 
 .link-git {
     text-decoration: none;
@@ -137,7 +137,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) and (orientation:portrait) {
-    body,html {
+    html {
         background-image: url('/img/background-sm.svg');
         background-size: cover;
         height: 100%;
@@ -149,9 +149,9 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         
         vertical-align: center;
-        gap: 5%;
+        
     }
 }
