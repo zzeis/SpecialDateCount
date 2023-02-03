@@ -1,3 +1,5 @@
+/* Checking if the current day is the same as the special day. If it is, it removes the class "close"
+from the element with the id "specialDay". */
 window.addEventListener('load', function() {
     const now2 = new Date(); // current date
   
