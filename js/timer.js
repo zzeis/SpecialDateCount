@@ -1,12 +1,13 @@
 /* Calculating the difference between the current date and a special date. */
-setInterval(function() {
+setInterval(function () {
   const now = new Date(); // current date
 
   const specialDay = new Date("2022-03-09"); //special date
 
-  const countDiff = Math.abs(now.getTime() - specialDay.getTime());
+  var countDiff = now - specialDay;
 
-  const days = Math.ceil(countDiff / (1000 * 60 * 60 * 24));
+  var days = Math.floor(countDiff / (1000 * 60 * 60 * 24) + 1);
+  // const days = Math.ceil(countDiff / (1000 * 60 * 60 * 24));
 
   var years = 0,
     currentY = now.getFullYear(),
@@ -28,7 +29,5 @@ setInterval(function() {
 
   document.querySelector("#years").innerHTML = "Anos: " + years;
 
-  console.log(specialDay.getMonth());
-},1000);
-
-
+  console.log(specialDay.getTime());
+}, 1000);
