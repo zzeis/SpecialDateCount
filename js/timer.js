@@ -8,14 +8,16 @@ setInterval(function () {
 
   var days = Math.floor(countDiff / (1000 * 60 * 60 * 24) + 1);
   // const days = Math.ceil(countDiff / (1000 * 60 * 60 * 24));
-
+  var 
+  currentDay = now.getDate(),
+  specialD = specialDay.getDate() + 1;
   var years = 0,
     currentY = now.getFullYear(),
     specialY = specialDay.getFullYear(),
     currentM = now.getMonth() + 1,
     specialM = specialDay.getMonth() + 1;
 
-  if (currentM === specialM) {
+  if (currentM === specialM & currentDay === specialD) {
     years = currentY - specialY;
   }
 
