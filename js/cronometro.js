@@ -1,12 +1,23 @@
+
+const specialDay = new Date("2022-03-09");
 var year = new Date();
+
 var year = year.getFullYear();
 
+
+var now = new Date();
+
 var targetDate = new Date(year + "-03-09");
+
+if(now > targetDate){
+  targetDate = new Date(year + 1 + "-03-09");
+}
+
 
 
 /* A function that is called every 1000 milliseconds. */
 setInterval(function () {
-  var now = new Date();
+  
 
   // Calcular a diferença em milissegundos
   var timeDiff = targetDate - now;
