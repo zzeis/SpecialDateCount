@@ -4,6 +4,7 @@ setInterval(function () {
 
   const specialDay = new Date("2022-03-09"); //special date
 
+  
   var countDiff = now - specialDay;
 
   var days = Math.floor(countDiff / (1000 * 60 * 60 * 24) + 1);
@@ -17,9 +18,14 @@ setInterval(function () {
     currentM = now.getMonth() + 1,
     specialM = specialDay.getMonth() + 1;
 
-  if (currentM === specialM & currentDay === specialD) {
+
+
+  
+
+  if (currentM === specialM & currentDay >= specialD) {
     years = currentY - specialY;
   }
+
 
   var months =
     (now.getFullYear() - specialDay.getFullYear()) * 12 +
