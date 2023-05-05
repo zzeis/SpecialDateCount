@@ -18,9 +18,22 @@
     <script src="/js/dayAnimation.js"></script>
     <script src="/js/cronometro.js"></script>
 
-    <!-- Frame works -->
+    <!-- Librarys -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <title>SpecialDay</title>
+    <style>
+   
+    </style>
+    <script>
+      function seeDate(){
+        swal("09/03/2022 ❤",{
+          buttons:false
+        });
+      }
+    
+    </script>
   </head>
   <body>
     <div class="container">
@@ -42,6 +55,8 @@
         ></lottie-player>
       </div>
       <div class="anim">
+        <a
+        onclick="seeDate()">
         <lottie-player
           src="/animation/calendar.json"
           background="transparent"
@@ -50,6 +65,7 @@
           loop
           autoplay
         ></lottie-player>
+      </a>
         <a
           class="playlist"
           target="_blank"
