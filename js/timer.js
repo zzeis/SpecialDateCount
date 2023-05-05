@@ -22,9 +22,9 @@ setInterval(function () {
 
   
 
-  if (currentM === specialM & currentDay >= specialD) {
+  
     years = currentY - specialY;
-  }
+    
 
 
   var months =
@@ -37,5 +37,5 @@ setInterval(function () {
 
   document.querySelector("#years").innerHTML = "Anos: " + years;
 
-  console.log(specialDay.getTime());
+ 
 }, 1000);
