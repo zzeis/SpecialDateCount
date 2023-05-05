@@ -114,6 +114,16 @@ div.timer p {
 
 }
 
+.swal-modal {
+    background-color: #8500ea;
+    border: 3px solid #6100ba;
+  
+  } 
+  .swal-text{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    color: white;
+  }
 
 
 .link-git {
