@@ -4,7 +4,7 @@
 
 "adjustments were made for the Brazilian dates" 
 
-## linguagens 
+## language 
 
 - *JavaScript*
 
