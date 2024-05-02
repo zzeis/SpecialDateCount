@@ -1,5 +1,5 @@
 
-const specialDay = new Date("2022-03-09");
+const specialDay = new Date("2000-10-06");
 var year = new Date();
 
 var year = year.getFullYear();
@@ -7,10 +7,10 @@ var year = year.getFullYear();
 
 var now = new Date();
 
-var targetDate = new Date(year + "-03-09");
+var targetDate = new Date(year + "-10-06");
 
 if(now > targetDate){
-  targetDate = new Date(year + 1 + "-03-09");
+  targetDate = new Date(year + 1 + "-10-06");
 }
 
 

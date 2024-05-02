@@ -3,7 +3,7 @@ from the element with the id "specialDay". */
 window.addEventListener('load', function() {
     const now2 = new Date(); // current date
   
-    const specialDay2 = new Date("2022-03-09"); //special date
+    const specialDay2 = new Date("2000-10-06"); //special date
   
     const countDiff2 = Math.abs(now2.getTime() - specialDay2.getTime());
   

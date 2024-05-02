@@ -2,7 +2,7 @@
 setInterval(function () {
   const now = new Date(); // current date
 
-  const specialDay = new Date("2022-03-09"); //special date
+  const specialDay = new Date("2000-10-06"); //special date
 
   
   var countDiff = now - specialDay;
