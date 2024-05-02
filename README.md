@@ -12,4 +12,4 @@
 - *LottieFiles* for animations
 - *Unicons* for icons
 
-### 👀 see website here: https://our-special-day.netlify.app/
+### 👀 see website here: https://datecountzzeis.netlify.app/
